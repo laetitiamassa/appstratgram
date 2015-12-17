@@ -7,13 +7,13 @@
     <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand">
-            <a href="#top"  onclick = $("#menu-close").click(); >App'Strat'Gram</a>
+            <a href="#top"  onclick = $("#menu-close").click(); ><span class="blue">App'</span> <span class="yellow">Strat'</span> <span class="whitey">Gram'</span></a>
         </li>
         <li>
             <a href="#top" onclick = $("#menu-close").click(); >Home</a>
         </li>
         <li>
-            <a href="#about" onclick = $("#menu-close").click(); >About</a>
+            <a href="#philosophy" onclick = $("#menu-close").click(); >Philosophy</a>
         </li>
         <li>
             <a href="#services" onclick = $("#menu-close").click(); >Services</a>
@@ -48,12 +48,12 @@
         </h1>
         <h2>Because your app deserves<span class="yellow"><b> a built-in marketing strategy</b></span></h2>
         <br>
-        <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        <a href="#philosophy" class="btn btn-dark btn-lg">Find Out More</a>
     </div>
 </header>
 
 <!-- About -->
-<section id="about" class="about">
+<section id="philosophy" class="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -79,6 +79,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-10 col-lg-offset-1">
+                
                 <h2>Our Services</h2>
                 <hr class="small">
                 <div class="row">
@@ -141,12 +142,13 @@
                             </h4>
                             <p>
                                 <!-- Spécialisés en droit des nouvelles technologies, nous attirons votre attention sur divers manières de protéger votre app. -->
-                                Specialized in technology law, we draw your attention on several ways protect your app on a legal basis.
+                                Specialized in technology law, we draw your attention on several ways to protect your app on a legal basis.
                             </p>
                             <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                 </div>
+
                 <!-- /.row (nested) -->
             </div>
             <!-- /.col-lg-10 -->
@@ -184,8 +186,9 @@
                         <a href="http://github.com/laetitiamassa" target="_blank"><i class="fa fa-github fa-inverse fa-2x"></i></a>
                     </li>
                 </ul>
+            </div>
         </div>
-    </div>
+    
 </aside>
 
 
@@ -256,87 +259,124 @@
                 <h2>Our Packages</h2>
                 <hr class="small">
                 <div class="row">
+
                     <div class="col-md-3">
-                        <h3>"Tell & Sell" Pack</h3>
-                        <hr class="small">
-                        375,- EUR ht
-                        <br>
-                        
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-desktop fa-stack-1x text-primary"></i>
-                        </span>
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
-                        </span>
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-paypal fa-stack-1x text-primary"></i>
-                        </span>
-                        <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-default btn-block" %>
+                        <div class="panel panel-default no-bg">
+                            <div class="panel-body">
+                                <h3>"Tell & Sell"</h3>
+                                <hr>
+                                Publish your articles and propose products for sale, via your paypal
+                                <hr class="small">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-desktop fa-stack-1x text-primary"></i>
+                                </span>
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
+                                </span>
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-paypal fa-stack-1x text-primary"></i>
+                                </span>
+
+                                <hr>
+                                <p class="lead">375,- EUR ttc</p>
+                               
+                                
+                                
+                                <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-success btn-block" %>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="panel panel-default no-bg">
+                            <div class="panel-body">
+                                <h3>"Community"</h3>
+                                <hr>
+                                Manage your community and let your members communicate with each other
+                                <hr class="small">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-desktop fa-stack-1x text-primary"></i>
+                                </span>
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
+                                </span>
+                                 <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-users fa-stack-1x text-primary"></i>
+                                </span>
+                            
+                            <hr>
+                                <p class="lead">875,- EUR ttc</p>
+                                
+                                
+
+                            <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-success btn-block" %>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <h3>"Community" Pack</h3>
-                        <hr class="small">
-                        875,- EUR ht
-                        <br>
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-desktop fa-stack-1x text-primary"></i>
-                        </span>
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
-                        </span>
-                         <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-users fa-stack-1x text-primary"></i>
-                        </span>
-                        <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-default btn-block" %>
+                        <div class="panel panel-default no-bg">
+                            <div class="panel-body">
+                                <h3>"Startup launch"</h3>
+                                <hr>
+                                Get a first working version of your web application out, and collect payments
+                                <hr class="small">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-desktop fa-stack-1x text-primary"></i>
+                                </span>
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
+                                </span>
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-credit-card fa-stack-1x text-primary"></i>
+                                </span>
+                                <hr>
+                                <p class="lead">1975,- EUR ttc</p>
+                                
+                                <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-success btn-block" %>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <h3>"Startup launch" Pack</h3>
-                        <hr class="small">
-                        1975,- EUR ht<br>
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-desktop fa-stack-1x text-primary"></i>
-                        </span>
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
-                        </span>
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-dollar fa-stack-1x text-primary"></i>
-                        </span>
-                        <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-default btn-block" %>
-                    </div>
-                    <div class="col-md-3">
-                        <h3>"Mobile launch" Pack</h3>
-                        <hr class="small">
-                        2475,- EUR ht<br>
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-mobile fa-stack-1x text-primary"></i>
-                        </span>
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-desktop fa-stack-1x text-primary"></i>
-                        </span>
-                        
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
-                        </span>
-                        <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-default btn-block" %>
+                        <div class="panel panel-default no-bg">
+                            <div class="panel-body">
+                                <h3>"Mobile launch"</h3>
+                                <hr>
+                                Get a first working version of your mobile app on the app stores
+                                <hr class="small">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-mobile fa-stack-1x text-primary"></i>
+                                </span>
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-desktop fa-stack-1x text-primary"></i>
+                                </span>
+                                
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
+                                </span>
+                                <hr>
+                                <p class="lead">2475,- EUR ttc</p>
+                                
+                                <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-success btn-block" %>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <h3>You have a specific request? 
-                    <br>Let us help you!</h3>
-                <%= link_to "Get a free quote", "mailto:contact@appstratgram.com", class: "btn btn-lg btn-light" %>
+                <p class="lead">You have a specific request? 
+                    <br>Let us help you!</br>
+                <%= link_to "Get a free quote", "mailto:contact@appstratgram.com", class: "btn btn-lg btn-light" %></p>
                 <!-- <a href="#" class="btn btn-lg btn-dark">Look at Me!</a> -->
             </div>
         </div>
@@ -367,7 +407,7 @@
                 </h4>
                 <p>Boulevard des Invalides<br>1160 Bruxelles</p>
                 <ul class="list-unstyled">
-                    <li><i class="fa fa-phone fa-fw"></i> (+32) 489 327 849</li>
+                    <li><i class="fa fa-phone fa-fw"></i> (+32) 476 63 02 63</li>
                     <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:contact@appstratgram.com">contact@appstratgram.com</a>
                     </li>
                 </ul>
