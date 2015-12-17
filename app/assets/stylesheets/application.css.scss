@@ -14,9 +14,16 @@
  *= require_self
  */
 
+  // text responsive
+@media screen and (max-width: 480px) {
+  .big-title {font-size: 0.5em;}
+}
+
  .big-title h1 {
  	font-size: 7.5em;
  }
+
+
 
  .yellow {
  	color: #f1c40f;
