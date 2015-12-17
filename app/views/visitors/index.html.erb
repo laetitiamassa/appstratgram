@@ -1,3 +1,6 @@
+
+
+
 <!-- Navigation -->
 <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
 <nav id="sidebar-wrapper">
@@ -16,7 +19,13 @@
             <a href="#services" onclick = $("#menu-close").click(); >Services</a>
         </li>
         <li>
+            <a href="#team" onclick = $("#menu-close").click(); >Team</a>
+        </li>
+        <li>
             <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+        </li>
+        <li>
+            <a href="#packages" onclick = $("#menu-close").click(); >Packages</a>
         </li>
         <li>
             <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
@@ -26,10 +35,16 @@
 
 <!-- Header -->
 <header id="top" class="header">
+
+    <!-- App Strat Gram logo left -->
+    <div class="header-brand">
+    <h1><span class="blue">App'</span> <span class="yellow">Strat'</span> Gram'</h1>
+</div>
+
     <div class="text-vertical-center big-title">
         <h1>
             <!--Your app deserves a built-in strategy-->
-            We build <span class="blue">apps</span> that <span class="yellow">sell</span>
+            We build <span class="blue shadowed">apps</span> that <span class="yellow">sell</span>
         </h1>
         <h2>Because your app deserves<span class="yellow"><b> a built-in marketing strategy</b></span></h2>
         <br>
@@ -76,8 +91,11 @@
                             <h4>
                                 <strong>Web apps development</strong>
                             </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
+                            <p>
+                                <!--Nous construisons des sites web et applications web, optimisées dès le départ pour les mobiles, en tenant compte de votre cible. -->
+                                We build web sites and web applications, optimized from the start for mobile devices, taking into account your market niche.
+                            </p>
+                            <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
@@ -89,8 +107,11 @@
                             <h4>
                                 <strong>Mobile apps development</strong>
                             </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
+                            <p>
+                                <!-- Nous construisons des sites mobiles et applications mobiles sur plusieurs plate-formes, selon votre cible. -->
+                                We also build mobile websites and mobile apps, on several platforms, based on your target market niche.
+                            </p>
+                            <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
@@ -102,8 +123,11 @@
                             <h4>
                                 <strong>Market Strategy</strong>
                             </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
+                            <p>
+                                <!-- Nous vous aidons à vous poser les bonnes questions pour atteindre votre cible, et implémentons vos réponses dans le développement. -->
+                                We help you ask yourself the right questions in order to reach your market niche, and implement your answers into the development.
+                            </p>
+                            <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
@@ -115,8 +139,11 @@
                             <h4>
                                 <strong>Legal Strategy</strong>
                             </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
+                            <p>
+                                <!-- Spécialisés en droit des nouvelles technologies, nous attirons votre attention sur divers manières de protéger votre app. -->
+                                Specialized in technology law, we draw your attention on several ways protect your app on a legal basis.
+                            </p>
+                            <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                 </div>
@@ -129,14 +156,38 @@
     <!-- /.container -->
 </section>
 
+
 <!-- Callout -->
-<aside class="callout">
+<aside class="callout" id="team">
+
     <div class="text-vertical-center">
-        <h1>We accompany our clients</h1>
-        <br>
-        <h3>"J'ai beaucoup aimé la prise en compte de mes impératifs économiques dans la création de l'app !"</h3>
+        <h2>Our team</h2>
+        <hr class="small">
+        <div class="col-md-8 col-md-offset-2">
+            <%= image_tag "laetitiamassa.jpg", size: "150x150", class: "img-circle" %>
+            <p class="lead">
+                Hi, I am Laetitia Massa !
+            </p>
+            <p class="lead">I started my career as an <b>attorney at the Brussels bar</b>, studied marketing, then <b>founded several web-based startups</b> (in real estate, for lawyers, for African diaspora).
+            <p class="lead">Along the way, I ended up coding my own apps, and while doing that, I realized (thanks to my marketing background) that <b>the more you take marketing into account while programming, the more efficient the apps where once launched</b>.
+            <p class="lead">I decided to put my experience and that philosophy at the service of my clients.
+            </p>
+
+            <ul class="list-inline">
+                    <li>
+                        <a href="http://linkedin.com/in/laetitiamassa" target="_blank"><i class="fa fa-linkedin fa-inverse fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/laetitiamassa" target="_blank"><i class="fa fa-twitter fa-inverse fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://github.com/laetitiamassa" target="_blank"><i class="fa fa-github fa-inverse fa-2x"></i></a>
+                    </li>
+                </ul>
+        </div>
     </div>
 </aside>
+
 
 <!-- Portfolio -->
 <section id="portfolio" class="portfolio">
@@ -151,12 +202,24 @@
                             <%= link_to image_tag("client_tosala.png", class: "img-portfolio img-responsive"), "http://tosala.org", target: "_blank" %>
                         </div>
                     </div>
+
                     <div class="col-md-6">
                         <div class="portfolio-item">
                             <%= link_to image_tag("client_courts.png", class: "img-portfolio img-responsive"), "http://courts.be", target: "_blank" %>
                         </div>
                     </div>
 
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                            <%= link_to image_tag("client_mabiki.png", class: "img-portfolio img-responsive"), "http://mabiki.net", target: "_blank" %>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                            <%= link_to image_tag("client_hackuna.png", class: "img-portfolio img-responsive"), "http://hackuna.org", target: "_blank" %>
+                        </div>
+                    </div>
                     
                     <div class="col-md-6">
                         <div class="portfolio-item">
@@ -173,17 +236,7 @@
                     
                     
                     
-                    <div class="col-md-6">
-                        <div class="portfolio-item">
-                            <%= link_to image_tag("client_mabiki.png", class: "img-portfolio img-responsive"), "http://mabiki.net", target: "_blank" %>
-                        </div>
-                    </div>
                     
-                    <div class="col-md-6">
-                        <div class="portfolio-item">
-                            <%= link_to image_tag("client_hackuna.png", class: "img-portfolio img-responsive"), "http://hackuna.org", target: "_blank" %>
-                        </div>
-                    </div>
                 </div>
                 <!-- /.row (nested) -->
                 <!--<a href="#" class="btn btn-dark">View More Items</a>-->
@@ -196,17 +249,101 @@
 </section>
 
 <!-- Call to Action -->
-<aside class="call-to-action bg-primary">
+<aside class="call-to-action bg-primary" id="packages">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h3>Let us help you</h3>
-                <a href="#" class="btn btn-lg btn-light">Get a free quote</a>
+            <div class="text-center">
+                <h2>Our Packages</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>"Tell & Sell" Pack</h3>
+                        <hr class="small">
+                        375,- EUR ht
+                        <br>
+                        
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-desktop fa-stack-1x text-primary"></i>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-paypal fa-stack-1x text-primary"></i>
+                        </span>
+                        <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-default btn-block" %>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>"Community" Pack</h3>
+                        <hr class="small">
+                        875,- EUR ht
+                        <br>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-desktop fa-stack-1x text-primary"></i>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
+                        </span>
+                         <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-users fa-stack-1x text-primary"></i>
+                        </span>
+                        <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-default btn-block" %>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>"Startup launch" Pack</h3>
+                        <hr class="small">
+                        1975,- EUR ht<br>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-desktop fa-stack-1x text-primary"></i>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-dollar fa-stack-1x text-primary"></i>
+                        </span>
+                        <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-default btn-block" %>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>"Mobile launch" Pack</h3>
+                        <hr class="small">
+                        2475,- EUR ht<br>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-mobile fa-stack-1x text-primary"></i>
+                        </span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-desktop fa-stack-1x text-primary"></i>
+                        </span>
+                        
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
+                        </span>
+                        <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-default btn-block" %>
+                    </div>
+                </div>
+
+                <h3>You have a specific request? 
+                    <br>Let us help you!</h3>
+                <%= link_to "Get a free quote", "mailto:contact@appstratgram.com", class: "btn btn-lg btn-light" %>
                 <!-- <a href="#" class="btn btn-lg btn-dark">Look at Me!</a> -->
             </div>
         </div>
     </div>
 </aside>
+
+
 
 <!-- Map -->
 <!--<section id="contact" class="map">
@@ -223,7 +360,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
-                <h4><strong>App' Strat' Gram'</strong>
+
+                <h4><strong>
+                    <span class="blue">App'</span> <span class="yellow">Strat'</span> <span class="dark-blue">Gram'</span>
+                </strong>
                 </h4>
                 <p>Boulevard des Invalides<br>1160 Bruxelles</p>
                 <ul class="list-unstyled">
