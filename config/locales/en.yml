@@ -21,3 +21,79 @@
 
 en:
   hello: "Hello world"
+  menu:
+    home: "Home"
+    philosophy: "Philosophy"
+    services: "Services"
+    team: "Team"
+    portfolio: "Portfolio"
+    packages: "Packages"
+    contact: "Contact"
+  headline:
+    we_buil: "We build"
+    apps: "apps"
+    that: "that"
+    sell: "sell"
+  subline:
+    because: "Because your app deserves"
+    reason: "a built-in marketing stragtegy"
+  button:
+    more: "Find out more"
+    submit_project: "Submit your project"
+    get_quote: "Get a free quote"
+  philosophy:
+    title: "Marketing is everywhere, including inside your app"
+    content_1: "With more and more apps out there, having a built-in marketing strategy is critical to the success of your app-based company."
+    content_2: "Having been in your shoes, we are acustomed to build apps taking marketing aspects into account from the start."
+  services:
+    title: "Our services"
+    web_apps: "Web apps development"
+    web_content: "We build web sites and web applications, optimized from the start for mobile devices, taking into account your market niche."
+    mobile_apps: "Mobile apps development"
+    mobile_content: "We also build mobile websites and mobile apps, on several platforms, based on your target market niche."
+    marketing: "Market Strategy"
+    marketing_content: "We help you ask yourself the right questions in order to reach your market niche, and implement your answers into the development."
+    legal: "Legal Strategy"
+    legal_content: "Specialized in technology law, we draw your attention on several ways to protect your app on a legal basis."
+  team:
+    title: "Our Team"
+    hello: "Hi, I am Laetitia Massa !"
+    content_1: "I started my career as an"
+    content_2: "attorney at the Brussels bar"
+    content_3: "studied marketing, then"
+    content_4: "founded several web-based startups"
+    content_5: "(in real estate, for lawyers, for African diaspora)."
+    content_6: "Along the way, I ended up coding my own apps, and while doing that, I realized (thanks to my marketing background) that"
+    content_7: "the more you take marketing into account while programming, the more efficient the apps were once launched"
+    content_8: "I decided to put my experience and that philosophy at the service of my clients."
+  portfolio:
+    title: "Our Work"
+  packages:
+    tellsell:
+      title: "Tell & Sell"
+      content: "Publish your articles and propose products for sale, via your paypal"
+    community:
+      title: "Community"
+      content: "Manage your community and let your members communicate with each other"
+    startup_launch:
+      title: "Startup Launch"
+      content: "Get a first working version of your web application out, and collect payments"
+    mobile_launch:
+      title: "Mobile Launch"
+      content: "Get a first working version of your mobile app on the app stores"
+    specific_request: "You have a specific request?"
+    help: "Let us help you!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+

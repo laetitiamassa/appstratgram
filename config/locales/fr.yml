@@ -1,0 +1,68 @@
+fr:
+  menu:
+    home: "Accueil"
+    philosophy: "Philosophie"
+    services: "Services"
+    team: "Equipe"
+    portfolio: "Portfolio"
+    packages: "Packages"
+    contact: "Contact"
+  headline:
+    we_build: "Nous créons"
+    apps: "des apps"
+    that: "qui"
+    sell: "vendent"
+  subline:
+    because: "Parce que votre application mérite"
+    reason: "une stratégie marketing intégrée"
+  button:
+    more: "En savoir plus"
+    submit_project: "Soumettre mon projet"
+    get_quote: "Obtenir un devis gratuit"
+  philosophy:
+    title: "Le marketing est partout, y compris dans votre appli"
+    content_1: "Avec un nombre croissant d'applications disponibles, avoir une stratégie marketing intégrée est nécessaire au succès de votre société."
+    content_2: "Pour avoir été à votre place, nous avons pris l'habitude de construire des apps en tenant compte, dès le départ, des aspects marketing."
+  services:
+    title: "Nos services"
+    web_apps: "Applications web"
+    web_content: "Nous développons des applications et sites web, optimisées pour les smartphones, tenant compte de votre public cible."
+    mobile_apps: "Applications mobiles"
+    mobile_content: "Nous développons également des sites mobiles et applications mobiles, sur diverses platforms, en fonction de votre public cible."
+    marketing: "Marketing"
+    marketing_content: "Nous vous aidons à vous poser les bonnes questions pour toucher votre public cible, et développons à partir de vos réponses."
+    legal: "Droit"
+    legal_content: "Spécialisés en droit des technologies, nous attirons votre attention sur diverses manières de protéger juridiquement votre app."
+  team:
+    title: "Notre équipe"
+    hello: "Hello, je suis Laetitia Massa !"
+    content_1: "J'ai démarré ma carrière en tant"
+    content_2: "qu'avocat au Barreau de Bruxelles"
+    content_3: "ai étudié le marketing, ensuite"
+    content_4: "fondé plusieurs startups"
+    content_5: "(en immobilier, pour les avocats, pour la diaspora africaine)."
+    content_6: "Amoureuse de technologie, j'ai fini par programmer mes propres applications moi-même, et c'est en faisant cela que j'ai réalisé (grâce à mon background marketing) que"
+    content_7: "plus je tenais compte du marketing durant la programmation, plus l'application était économiquement efficace une fois lancée"
+    content_8: "J'ai donc décidé de mettre cette expérience et cette philosophie au service de mes clients."
+  portfolio:
+    title: "Nos réalisations"
+  packages:
+    title: "Nos packages"
+    tellsell:
+      title: "Tell & Sell"
+      content: "Publiez vos nouvelles et proposez vos produits à la vente, via votre paypal"
+    community:
+      title: "Community"
+      content: "Gérez votre communauté et laissez les membres communiquer entre eux"
+    startup_launch:
+      title: "Startup Launch"
+      content: "Une première version publiable de votre web app, et collectez les paiements"
+    mobile_launch:
+      title: "Mobile Launch"
+      content: "Une première version publiable de votre app mobile sur le Play et App Stores"
+    specific_request: "Vous avez une demande spécifique ?"
+    help: "Nous vous aiderons volontiers !"
+
+
+
+

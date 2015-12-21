@@ -2,34 +2,47 @@
 
 
 <!-- Navigation -->
+
 <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
 <nav id="sidebar-wrapper">
+
     <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        
+        
+
         <li class="sidebar-brand">
             <a href="#top"  onclick = $("#menu-close").click(); ><span class="blue">App'</span> <span class="yellow">Strat'</span> <span class="whitey">Gram'</span></a>
         </li>
-        <li>
-            <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+        <li class="whitey">
+            <% if I18n.locale.to_s.include?("en") %>
+                <%= link_to "IN FRENCH", url_for(:locale => 'fr') %>
+            <% elsif I18n.locale.to_s.include?("fr") %>
+                <%= link_to "IN ENGLISH", url_for(:locale => 'en') %>
+            <% end %>
         </li>
         <li>
-            <a href="#philosophy" onclick = $("#menu-close").click(); >Philosophy</a>
+            <a href="#top" onclick = $("#menu-close").click(); ><%= t("menu.home") %></a>
         </li>
         <li>
-            <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+            <a href="#philosophy" onclick = $("#menu-close").click(); ><%= t("menu.philosophy") %></a>
         </li>
         <li>
-            <a href="#team" onclick = $("#menu-close").click(); >Team</a>
+            <a href="#services" onclick = $("#menu-close").click(); ><%= t("menu.services") %></a>
         </li>
         <li>
-            <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+            <a href="#team" onclick = $("#menu-close").click(); ><%= t("menu.team") %></a>
         </li>
         <li>
-            <a href="#packages" onclick = $("#menu-close").click(); >Packages</a>
+            <a href="#portfolio" onclick = $("#menu-close").click(); ><%= t("menu.portfolio") %></a>
         </li>
         <li>
-            <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            <a href="#packages" onclick = $("#menu-close").click(); ><%= t("menu.packages") %></a>
         </li>
+        <li>
+            <a href="#contact" onclick = $("#menu-close").click(); ><%= t("menu.contact") %></a>
+        </li>
+
     </ul>
 </nav>
 
@@ -44,11 +57,11 @@
     <div class="text-vertical-center big-title">
         <h1>
             <!--Your app deserves a built-in strategy-->
-            We build <span class="blue shadowed">apps</span> that <span class="yellow">sell</span>
+            <%= t("headline.we_build") %> <span class="blue shadowed"><%= t("headline.apps") %></span> <%= t("headline.that") %> <span class="yellow"><%= t("headline.sell") %></span>
         </h1>
-        <h2>Because your app deserves<span class="yellow"><b> a built-in marketing strategy</b></span></h2>
+        <h2><%= t("subline.because") %><span class="yellow"><b> <%= t("subline.reason") %></b></span></h2>
         <br>
-        <a href="#philosophy" class="btn btn-dark btn-lg">Find Out More</a>
+        <a href="#philosophy" class="btn btn-dark btn-lg"><%= t("button.more") %></a>
     </div>
 </header>
 
@@ -57,10 +70,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Marketing is everywhere, including inside your app</h1>
+                <h1><%= t("philosophy.title") %></h1>
                 <p class="lead">
-                    With more and more apps out there, having a built-in marketing strategy is critical to the success of your app-based company.
-                <br>Having been in your shoes, we are acustomed to build apps taking marketing aspects into account from the start.
+                    <%= t("philosophy.content_1") %>
+                <br><%= t("philosophy.content_2") %>
                 </p>
                 
 
@@ -80,7 +93,7 @@
         <div class="row text-center">
             <div class="col-lg-10 col-lg-offset-1">
                 
-                <h2>Our Services</h2>
+                <h2><%= t("services.title") %></h2>
                 <hr class="small">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
@@ -90,11 +103,11 @@
                             <i class="fa fa-desktop fa-stack-1x text-primary"></i>
                         </span>
                             <h4>
-                                <strong>Web apps development</strong>
+                                <strong><%= t("services.web_apps") %></strong>
                             </h4>
                             <p>
                                 <!--Nous construisons des sites web et applications web, optimisées dès le départ pour les mobiles, en tenant compte de votre cible. -->
-                                We build web sites and web applications, optimized from the start for mobile devices, taking into account your market niche.
+                                <%= t("services.web_content") %>
                             </p>
                             <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
@@ -106,11 +119,11 @@
                             <i class="fa fa-mobile fa-stack-1x text-primary"></i>
                         </span>
                             <h4>
-                                <strong>Mobile apps development</strong>
+                                <strong><%= t("services.mobile_apps") %></strong>
                             </h4>
                             <p>
                                 <!-- Nous construisons des sites mobiles et applications mobiles sur plusieurs plate-formes, selon votre cible. -->
-                                We also build mobile websites and mobile apps, on several platforms, based on your target market niche.
+                                <%= t("services.mobile_content") %>
                             </p>
                             <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
@@ -122,11 +135,11 @@
                             <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
                         </span>
                             <h4>
-                                <strong>Market Strategy</strong>
+                                <strong><%= t("services.marketing") %></strong>
                             </h4>
                             <p>
                                 <!-- Nous vous aidons à vous poser les bonnes questions pour atteindre votre cible, et implémentons vos réponses dans le développement. -->
-                                We help you ask yourself the right questions in order to reach your market niche, and implement your answers into the development.
+                                <%= t("services.marketing_content") %>
                             </p>
                             <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
@@ -138,11 +151,11 @@
                             <i class="fa fa-balance-scale fa-stack-1x text-primary"></i>
                         </span>
                             <h4>
-                                <strong>Legal Strategy</strong>
+                                <strong><%= t("services.legal") %></strong>
                             </h4>
                             <p>
                                 <!-- Spécialisés en droit des nouvelles technologies, nous attirons votre attention sur divers manières de protéger votre app. -->
-                                Specialized in technology law, we draw your attention on several ways to protect your app on a legal basis.
+                                <%= t("services.legal_content") %>
                             </p>
                             <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
@@ -163,16 +176,16 @@
 <aside class="callout" id="team">
 
     <div class="text-vertical-center">
-        <h2>Our team</h2>
+        <h2><%= t("team.title") %></h2>
         <hr class="small">
         <div class="col-md-8 col-md-offset-2">
             <%= image_tag "laetitiamassa.jpg", size: "150x150", class: "img-circle" %>
             <p class="lead">
-                Hi, I am Laetitia Massa !
+                <%= t("team.hello") %>
             </p>
-            <p class="lead">I started my career as an <b>attorney at the Brussels bar</b>, studied marketing, then <b>founded several web-based startups</b> (in real estate, for lawyers, for African diaspora).
-            <p class="lead">Along the way, I ended up coding my own apps, and while doing that, I realized (thanks to my marketing background) that <b>the more you take marketing into account while programming, the more efficient the apps were once launched</b>.
-            <p class="lead">I decided to put my experience and that philosophy at the service of my clients.
+            <p class="lead"><%= t("team.content_1") %> <b><%= t("team.content_2") %></b>, <%= t("team.content_3") %> <b><%= t("team.content_4") %></b> <%= t("team.content_5") %>
+            <p class="lead"><%= t("team.content_6") %> <b><%= t("team.content_7") %></b>.
+            <p class="lead"><%= t("team.content_8") %>
             </p>
 
             <ul class="list-inline">
@@ -197,7 +210,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
-                <h2>Our Work</h2>
+                <h2><%= t("portfolio.title") %></h2>
                 <hr class="small">
                 <div class="row">
                     <div class="col-md-6">
@@ -256,16 +269,16 @@
     <div class="container">
         <div class="row">
             <div class="text-center">
-                <h2>Our Packages</h2>
+                <h2><%= t("packages.title") %></h2>
                 <hr class="small">
                 <div class="row">
 
                     <div class="col-md-3">
                         <div class="panel panel-default no-bg">
                             <div class="panel-body">
-                                <h3>"Tell & Sell"</h3>
+                                <h3><%= t("packages.tellsell.title") %></h3>
                                 <hr>
-                                Publish your articles and propose products for sale, via your paypal
+                                <%= t("packages.tellsell.content") %>
                                 <hr class="small">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -285,7 +298,7 @@
                                
                                 
                                 
-                                <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-success btn-block" %>
+                                <%= link_to t("button.submit_project"), "mailto:contact@appstratgram.com", class: "btn btn-success btn-block" %>
                             </div>
                         </div>
                     </div>
@@ -293,9 +306,9 @@
                     <div class="col-md-3">
                         <div class="panel panel-default no-bg">
                             <div class="panel-body">
-                                <h3>"Community"</h3>
+                                <h3><%= t("packages.community.title") %></h3>
                                 <hr>
-                                Manage your community and let your members communicate with each other
+                                <%= t("packages.community.content") %>
                                 <hr class="small">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -315,16 +328,16 @@
                                 
                                 
 
-                            <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-success btn-block" %>
+                            <%= link_to t("button.submit_project"), "mailto:contact@appstratgram.com", class: "btn btn-success btn-block" %>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="panel panel-default no-bg">
                             <div class="panel-body">
-                                <h3>"Startup launch"</h3>
+                                <h3><%= t("packages.startup_launch.title") %></h3>
                                 <hr>
-                                Get a first working version of your web application out, and collect payments
+                                <%= t("packages.startup_launch.content") %>
                                 <hr class="small">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -341,16 +354,16 @@
                                 <hr>
                                 <p class="lead">1975,- EUR ttc</p>
                                 
-                                <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-success btn-block" %>
+                                <%= link_to t("button.submit_project"), "mailto:contact@appstratgram.com", class: "btn btn-success btn-block" %>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="panel panel-default no-bg">
                             <div class="panel-body">
-                                <h3>"Mobile launch"</h3>
+                                <h3><%= t("packages.mobile_launch.title") %></h3>
                                 <hr>
-                                Get a first working version of your mobile app on the app stores
+                                <%= t("packages.mobile_launch.content") %>
                                 <hr class="small">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -368,15 +381,15 @@
                                 <hr>
                                 <p class="lead">2475,- EUR ttc</p>
                                 
-                                <%= link_to "Submit your project", "mailto:contact@appstratgram.com", class: "btn btn-success btn-block" %>
+                                <%= link_to t("button.submit_project"), "mailto:contact@appstratgram.com", class: "btn btn-success btn-block" %>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <p class="lead">You have a specific request? 
-                    <br>Let us help you!</br>
-                <%= link_to "Get a free quote", "mailto:contact@appstratgram.com", class: "btn btn-lg btn-light" %></p>
+                <p class="lead"><%= t("packages.specific_request") %> 
+                    <br><%= t("packages.help") %></p>
+                <%= link_to t("button.get_quote"), "mailto:contact@appstratgram.com", class: "btn btn-lg btn-light" %>
                 <!-- <a href="#" class="btn btn-lg btn-dark">Look at Me!</a> -->
             </div>
         </div>
